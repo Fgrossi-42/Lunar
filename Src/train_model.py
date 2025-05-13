@@ -60,10 +60,6 @@ model.compile(optimizer=Adam(learning_rate=0.0001), loss='binary_crossentropy', 
 # Addestramento e salvataggio cronologia
 history = model.fit(train_ds, epochs=EPOCHS, validation_data=val_ds, callbacks=[TensorBoard(log_dir="logs")])
 
-# Salvataggio modello
-model.save("melanoma_model.h5")
-print("✅ Modello salvato come 'melanoma_model.h5'")
-
 # Grafico di accuratezza e perdita
 import matplotlib.pyplot as plt
 
