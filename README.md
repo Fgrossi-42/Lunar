@@ -8,8 +8,13 @@ Lunar is a Python-based tool that classifies skin lesion images as **benign** or
 
 ```
 Lunar/
+├── Image_plot/
+│   └── anteprima_dataset.png            # Preview of the images in the database
+│   └── training_plot_10_epoch.png       # Accuracy plot with 10 generations of AI
+│   └── training_plot_30_epoch.png       # Accuracy plot with 30 generations of AI
 ├── Src/
 │   └── melanoma_model.h5       # Pre-trained Keras model
+│   └── train_model.py          # AI training code (database required)
 ├── Small_samples/
 │   ├── benign/                 # Sample images of benign lesions
 │   └── malignant/              # Sample images of malignant lesions
