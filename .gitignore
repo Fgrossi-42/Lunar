@@ -1,0 +1,5 @@
+melanoma_cancer_dataset/
+myenv/
+venv/
+logs/
+.venv/
