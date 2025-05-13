@@ -97,4 +97,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Feel free to adapt this README further to fit your specific needs!
-```
