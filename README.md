@@ -1,6 +1,3 @@
-Here's an improved version of your README with a better layout and enhanced structure for clarity and presentation:
-
-```markdown
 # 🌙 Lunar - Melanoma Classifier
 
 Lunar is a Python-based tool that classifies skin lesion images as **benign** or **malignant** using a pre-trained TensorFlow model.
@@ -28,7 +25,7 @@ Lunar/
 
 Ensure you have Python 3.7+ installed. Then, install the required dependencies:
 
-```bash
+```
 pip install tensorflow pillow numpy
 ```
 
