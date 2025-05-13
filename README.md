@@ -1,69 +1,103 @@
+Here's an improved version of your README with a better layout and enhanced structure for clarity and presentation:
+
+```markdown
 # 🌙 Lunar - Melanoma Classifier
 
-Questo script classifica immagini di lesioni cutanee come **benigne** o **maligne** usando un modello pre-addestrato in TensorFlow.
+Lunar is a Python-based tool that classifies skin lesion images as **benign** or **malignant** using a pre-trained TensorFlow model.
 
 ---
 
-## 📁 Struttura del progetto
+## 📁 Project Structure
 
+```
+Lunar/
 ├── Src/
-│ └── melanoma_model.h5 # Modello Keras pre-addestrato
+│   └── melanoma_model.h5       # Pre-trained Keras model
 ├── Small_samples/
-│ ├── benign/ # Immagini di esempio benigne
-│ └── malignant/ # Immagini di esempio maligne
-├── Lunar.py # Script principale di predizione
-└── README.md # Questo file
+│   ├── benign/                 # Sample images of benign lesions
+│   └── malignant/              # Sample images of malignant lesions
+├── Lunar.py                    # Main prediction script
+└── README.md                   # This file
+```
 
 ---
 
-## ▶️ Come usarlo
+## ▶️ Getting Started
 
-### 1. Installa i requisiti
+### 1. Install Requirements
 
-Assicurati di avere Python 3.7+ e installa i pacchetti necessari:
+Ensure you have Python 3.7+ installed. Then, install the required dependencies:
 
+```bash
 pip install tensorflow pillow numpy
+```
 
-## 2. Esegui lo script
-### ✅ Metodo 1 - Con percorso immagine
+---
 
-python3 Lunar.py path/alla/immagine.jpg
+### 2. Running the Script
 
-Esempi:
+#### ✅ Method 1: Provide Image Path as Argument
 
-"python3 Lunar.py Small_samples/benign/melanoma_9605.jpg"
+Run the script by specifying the path to the image:
 
-"python3 Lunar.py Small_samples/malignant/melanoma10105.jpg"
+```bash
+python3 Lunar.py path/to/image.jpg
+```
 
-### ✅ Metodo 2 - Inserimento manuale
-Avvia senza argomenti:
+**Example:**
+```bash
+python3 Lunar.py Small_samples/benign/melanoma_9605.jpg
+python3 Lunar.py Small_samples/malignant/melanoma10105.jpg
+```
 
-"python3 Lunar.py"
+#### ✅ Method 2: Manual Input
 
-Poi inserisci il percorso richiesto
+Run the script without arguments:
 
-### 🖼️ Immagini di test
+```bash
+python3 Lunar.py
+```
 
-Puoi testare rapidamente il modello usando le immagini già fornite in:
+The script will prompt you to manually enter the image path.
 
-Small_samples/benign/
-Small_samples/malignant/
+---
 
-### ⚙️ Output
-Lo script stampa la classificazione con confidenza e colori nel terminale:
+## 🖼️ Testing with Sample Images
 
-🟢 Benign (verde) se la probabilità è < 0.5
+Quickly test the model using the provided sample images:
 
-🔴 Malignant (rosso) se > 0.5
+- **Benign Images:** `Small_samples/benign/`
+- **Malignant Images:** `Small_samples/malignant/`
 
-### Esempio output:
+---
 
-"🔍 Risultato predizione: Malignant (Confidenza: 0.87)"
+## ⚙️ Output Details
 
-### 📌 Note
-Le immagini vengono ridimensionate a 128x128 pixel.
+The script outputs the classification result with confidence levels displayed in the terminal. The result is color-coded for clarity:
 
-Sono supportati file .jpg o compatibili con Pillow.
+- 🟢 **Benign (Green):** Probability < 0.5  
+- 🔴 **Malignant (Red):** Probability > 0.5  
 
-È possibile usare anche immagini personali, basta fornire il path corretto.
+**Example Output:**
+```bash
+🔍 Prediction Result: Malignant (Confidence: 0.87)
+```
 
+---
+
+## 📌 Additional Notes
+
+- Input images are resized to **128x128 pixels** for processing.
+- Supported file formats include `.jpg` and other formats compatible with the Pillow library.
+- You can also use your own images by providing the correct file path.
+
+---
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Feel free to adapt this README further to fit your specific needs!
+```
